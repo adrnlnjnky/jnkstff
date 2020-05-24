@@ -1,0 +1,112 @@
+" /////// This is my vimrc file  ///////////
+
+
+" REMember :noh hide highlights
+" remember rememberCTRL P & H for history in X mode
+" Remember :so % to save and continue
+syntax enable
+filetype plugin on
+"
+" clear Normal
+
+colorscheme blue
+
+
+set background=dark
+set nocompatible
+set norelativenumber
+
+set number
+set history=100
+set scrolloff=999
+set hidden  " this is for buffers 
+
+set expandtab
+set tabstop=2
+set softtabstop=2
+" set shiftwidth=2
+set smartindent
+set smarttab
+set autoindent  " off to edit
+
+set textwidth=73
+set listchars=tab:→\ ,eol:↲,nbsp:␣,space:·,trail:·,extends:⟩,precedes:⟨
+set linebreak
+" set list " 
+
+set nobackup
+set noswapfile
+set laststatus=0
+
+set hlsearch    "  /:noh
+set incsearch
+
+set showmatch
+set omnifunc=syntaxcomplete#Complete
+
+" set foldmethod=manual/xf/af for manual
+
+set viminfo=%,'10,50,:100,h,f0,n~/.vim/cashe/.viminfo
+
+
+
+
+
+if empty(glob('~/.vim/autoload/plug.vim
+  silent !curl -fLo ~/.vim/autoload/plug.vim'))
+  \ https://raw.githubusercontent.com/jungunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+  endif
+
+if filereadable(expand("~/.vim/autolaod/plug.vim"))
+  call plug#begin('~/.vimplugins')
+  Plug 'vim-pandoc/vim-pandoc'
+  Plug 'cespare/vim-toml'
+  Plug 'fatih/vim-go'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'PProvost/vim-psi'
+  "Plug 'morhetx/gruvbox'
+  "call plug#end()
+  "let g:go_fmt_fail_silently = 0 
+  let g:go_fmt_command = 'goimports'"autoupdate
+  let g:go_fmt_autosave = 1
+else
+  autocmd vimleavepre *.go !gofmt -w % 
+  endif
+
+autocmd vimleavepre *.md !perl -p -i -e 's,\[([^\]]+?)\]\(\),[\1](https://duck.com/lite?q=\1),g' %
+
+au bufnewfile,bufRead *.profile set filetype=sh
+au bufnewfile,bufRead *.crontab set filetype=crontab
+au bufnewfile,bufRead *ssh/config set filetype=sshconfig
+au bufnewfile,bufRead *gitconfig set filetype=gitconfig
+au bufnewfile,bufRead /tmp/psql.edit.* set syntax=sql
+
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')),
+endfunc
+
+"  this will save your linepace when quitting
+au BufReadPost * if line("'\'") > 1 && line("'\'" <= line("$") | exe "normal! g'\"" | endif
+
+"  pane switching
+
+map <F4> :set list!
+
+
+
+
+
+" this kills arrow keys
+noremap <up> :echorerr "Umm, use k instead"<cr>
+noremap <down> :echorerr "HEY USE THE HOME ROW"<cr>
+noremap <left> :echorerr "Wrong Again, Home Row Dude"<cr>
+noremap <right> :echorerr "Man you ever gonna get off the arrow keys"<cr> 
+inoremap <up> <NOP>
+inoremap <down> <NOP>
+inoremap <left> <NOP>
+inoremap <right> <NOP>
+

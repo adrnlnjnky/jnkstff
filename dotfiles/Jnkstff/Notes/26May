@@ -1,0 +1,23 @@
+###  May 26 Monday:  Notes for the day
+
+
+# I was able to get wechat up.  We chat looks like a chat IRC that I can use
+# with twitch and should make it much easier to see and manage my chat
+# window as it will now sit in a bash termial!!!
+
+started into if then statements today   so far we are on the simple stuff but don't stop paying attention there are details that must be attended to. 
+
+
+1. still need to get that todo list working.  Lets make it happen locally then we can work on globally
+
+1.  I am really learning the power of vim.  so many commands and things you can do 
+    1. sometimes I get a result I have no idea how I did it. 
+    1. so much to learn 
+1. I need to sart learning more about the layers on my keybaord. 
+1. I should set up a template for my daily notes.  make things quicker and easier 
+1. work on getting tmux to open up with all my windows just how I like
+    1. this spins into gettng Lindas computer to boot into the Ispy perfectly
+1. I want to write a script in vimrc or tmux to get it to rotate or random open in differnt colorschemes.
+    1. I want to be able to pick the list of colorschemes
+    1. they could random or rotate
+

@@ -1,0 +1,120 @@
+
+###  First of the Day
+
+* started up wee-chat but I feel like I'm on a server all by myself.  for sure
+* what's going on but I'll hopefully have it working by end of day  6:40 am 
+
+
+####   Linux-Bump notes
+#
+#
+#  doing math you need ((    ))  
+#    * things inside double parenthesis will be treated with math
+#
+working on variables and how they are declared
+* how ' '  works vs. "  "  and ( )_
+
+
+argument passes a number
+/bin/bash: ix: command not found
+
+f(x) = 2x +3
+f(x) = x x 2 +3
+
+f(x): parameter
+f(2): argument
+
+subroutines   
+   a number of steps or actions  
+   old terminology
+
+* source [file]   this makes it runnable
+
+* remember that everything is a string. 
+###  segway into json
+#
+
+Tittle: JavaScript Object Notationg /JSON
+Subtitle: World's Most Prominent Structured Data language
+
+"Javascript"  "Json is strictly double quotes"
+
+10
+14.23   
+            "floating point is just decimals in math"
+
+"strings must be in quotes"
+
+true  "bolian" 
+false
+
+key:data,key:data,key:data,key:data,
+
+* json is built into Go 
+
+
+##  yaml is basically json and all json is valid yaml 
+#
+#  then it adds things that are to help make it human compatible
+#
+#  JSON is designed for computers to transfer data
+#  YAML is for people towork with it.  
+#
+#
+#  --- are use 
+#  comments are allowed 
+#  Line returns are allowed
+#
+#  ###########  End of Class  #################
+#
+
+
+YAML practice will be good 
+
+## for yaml practice we are going to go haead and make a couple yaml files
+#for lindas project.  
+#
+1. documents
+    1. client  
+    1. equipment
+    1. software
+    1. invoice
+1. client
+    1. first
+    1. last
+    1. street
+    1. city
+    1. zip
+1. equipment
+    1. name
+    1. part #
+    1. cost
+1. software
+    1. name
+    1. version
+1. invoice
+    1. name
+    1. price
+    1. notes
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Found a new stream on twitch 
+
+## Esden ##
+#
+   ** he is working on microboards and such gonna have to keep checking in on what he is up to 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+OH so I went and found the vim colors and made some tweaks that make it better for me 
+
+OK so I think I'm going to hook up my server and hook it up . I think I'm going to boot mint and see just what this thing can do as a desk top.  I hope to have all these computers talking soon. 
+
+see ya soon 
+ZZ
+

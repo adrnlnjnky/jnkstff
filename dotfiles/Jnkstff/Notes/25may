@@ -1,0 +1,29 @@
+######   May 25th ####
+
+Today is the begining of my daily journal and todo list what not. 
+
+1. Make a proper to do list that I can keep track of easily
+1. Research how to make my programs deploy haow and where I want at startup 
+
+
+
+###  So I broke my bash today.  I commented out the file pointer and Bash
+could not find any commands.  Took me a little while, and a few searches,
+before I was able to figure it out.  Moral of the paragraph, don't delete
+you path files.  
+
+
+9:30   OK I got my alacrity yaml or config file in shape.  there isn't much on there yet but its a start for sure 
+
+I also started with my tmux configuration file but yat is still proving hard for me to make work 
+
+Traceback (most recent call last):
+  File "/home/adn/.local/bin/bottle.py", line 3765, in <module>
+    run(args[0], host=host, port=int(port), server=opt.server,
+  File "/home/adn/.local/bin/bottle.py", line 3107, in run
+    app = load_app(app)
+  File "/home/adn/.local/bin/bottle.py", line 3052, in load_app
+    rv = load(target) # Import the target module
+  File "/home/adn/.local/bin/bottle.py", line 3037, in load
+    if module not in sys.modules: __import__(module)
+ModuleNotFoundError: No module named 'espefuse.py'; 'espefuse' is not a package

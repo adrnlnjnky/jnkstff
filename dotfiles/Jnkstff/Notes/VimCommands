@@ -1,0 +1,76 @@
+?* Vim notes from before class
+
+#### Editing commands ######Editing commands ######
+
+###### D for cut/delete #### D for cut/delete ######
+
+* dw  delete word (to begining of next word)
+* de  delete word (to end of the word)
+* d$  deletes from the curser to the end of the line 
+* dd  deletes the entire line 
+* D   deletes to the end of line
+* d0  deletes from curser back to the front of the line
+
+
+* 3w  moves to start of 3rd word
+* 5e  moves to the end of the 5th word 
+* 0w  moves to the start of the line!!!!!
+
+
+* i for insert
+* a for inserting after prompt
+* A insert at the end of the line
+* I insert at begining of the text 
+* O add a line above the current line
+* 0I puts you at the biging o fthe line
+* $i puts you to the end of the line
+* r replace at the curser
+* R replace mode (replace instead of insert)
+
+
+#########  UnDO stuff #######
+
+
+* u (lower case) to undo previous action
+* U (capital) undo all changes on the line
+* CTRL-R to undo all the undos 
+
+* p  this inserts the last deleted line so you can move lines around 
+
+* r (replace) type r then the letter you want to be there!!
+
+* ce Delete from curser to the end of word and place in Insert mode
+* c$ Delete from curser to the end of the line and place you in insert
+
+* gg send you to start of the file
+* 450 gg send you to line 450  
+* 490 CTRL-G send you to line 490
+
+* /  (this gives you a curser like : (at the bottom)
+    * search for a word this way
+* CNRL-O (goes back where you just were)
+* CNTL-I (goes foward)
+
+* % sign finds matching brackets
+
+* :s/bad-word/correction
+    * :s/thee/the  (replaced thee with the in the line your on)
+    * 10,30/old/new/g  (replace old with new from line 10 to 30)
+    * %s/old/new/g (replace through entire file)
+    * %s/old/now/gc (replace with a prompt)
+
+
+###### important  .  repeats the last line ######
+######  .  this is so important for being lazy like the up arrow in bash ######
+
+
+* v start the visual selection use jkhl to make the selection 
+
+* y for yank or copy 
+    * y3w will copy the next three words
+
+* } everything untill the next blank line
+    *d} deletes everything until next blank line
+    *y} yank everything until next line
+
+
